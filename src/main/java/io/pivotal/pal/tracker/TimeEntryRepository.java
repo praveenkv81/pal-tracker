@@ -6,7 +6,7 @@ public interface TimeEntryRepository {
 
 	public TimeEntry create(TimeEntry timeEntryObj);
 	
-	public TimeEntry find(long timeEntryIdVal);
+	public TimeEntry find(Long timeEntryIdVal);
 	
 	public List<TimeEntry> list();
 	
