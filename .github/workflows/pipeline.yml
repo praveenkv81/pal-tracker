@@ -14,15 +14,21 @@ jobs:
       with:
         java-version: 11
 <<<<<<< HEAD
+<<<<<<< HEAD
     - name: change file permission
       run: chmod -R 777 *
 =======
+=======
+>>>>>>> 96c52f2... Add tests for persisting time entries in database
     - name: Startup test database instance
       run: sudo service mysql start
     - name: Create test database
       run: |
         mysql -uroot -proot < databases/tracker/create_databases.sql
         ./gradlew testMigrate
+<<<<<<< HEAD
+>>>>>>> 96c52f2... Add tests for persisting time entries in database
+=======
 >>>>>>> 96c52f2... Add tests for persisting time entries in database
     - name: Build with Gradle
       run: ./gradlew build
